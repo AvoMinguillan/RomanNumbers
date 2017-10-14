@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/RomanNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Roman Number"
+        android:inputType="textCapCharacters" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:onClick="transform"
+        android:text="transform" />
+
+    <TextView
+        android:id="@+id/ArabicNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:padding="48dp"
+        android:textAllCaps="true"
+        android:textSize="56dp"
+        tools:text="1996" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:padding="32dp"
+        android:textAllCaps="true"
+        android:textSize="12dp"
+        android:text="Only correctly written numbers are calculated correctly. (if there is an unexpected character the app will crash) A filter to evaluate whether if a Roman Number is well written could be implemented" />
+
+</LinearLayout>
